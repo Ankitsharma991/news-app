@@ -1,10 +1,21 @@
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Homepage from "./Components/Homepage.tsx";
+import Header from "./Components/Header.tsx";
 
 function App() {
   return (
-    <div className="flex justify-center text-center w-full">
-      <h1 className="font-light text-3xl">News-App</h1>
-    </div>
+    <Router>
+      <div className="bg-gray-100 dark:bg-zinc-900 transition-all duration-700">
+        <Header />
+        <div className="max-w-6xl mx-auto">
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+          </Routes>
+          {/* <p>Footer</p> */}
+        </div>
+      </div>
+    </Router>
   );
 }
 
