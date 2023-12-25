@@ -8,12 +8,12 @@ function App() {
     <Router>
       <div className="bg-gray-100 dark:bg-zinc-900 transition-all duration-700">
         <Header />
-        <div className="max-w-6xl mx-auto">
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-          </Routes>
-          {/* <p>Footer</p> */}
-        </div>
+      </div> 
+      <div className="max-w-6xl mx-auto">
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+        </Routes>
+        {/* <p>Footer</p> */}
       </div>
     </Router>
   );
